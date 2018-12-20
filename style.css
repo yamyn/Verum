@@ -1,0 +1,12 @@
+/*!
+Theme Name: Verum
+Theme URI: http://underscores.me/
+Author: Yaroslav Mynchenko
+Author URI: https://www.linkedin.com/in/yaroslav-mynchenko-202152163/
+Description: VerumTrade wp Template
+Version: 1.0.0
+Text Domain: verumtrade
+*/ important
+body {
+	background-color: green !important;
+}
