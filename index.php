@@ -1,3 +1,4 @@
+
 <?php get_header('home'); ?>
 		
 		<div class="home-page">
@@ -752,5 +753,4 @@
 				</div>
 			</div>
 		</div>
-		
-<?php get_footer() ?>
+<?php get_footer(); ?>

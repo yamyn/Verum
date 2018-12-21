@@ -1,0 +1,11 @@
+<?php
+/*
+Template Name: Новости
+*/
+?>
+
+<?php get_header(); ?>
+
+<?php echo do_shortcode("[post_grid id='76']"); ?>
+
+<?php get_footer(); ?>

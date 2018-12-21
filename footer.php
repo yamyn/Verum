@@ -4,21 +4,39 @@
 					<div class="col-lg-2 footer-menu-col footer-menu-col-1"><a href="/"> <?php the_custom_logo(); ?></a></div>
 					<div class="col-lg-3 col-sm-6 footer-menu-col footer-menu-col-2">
 						<p class="footer-menu-title">Меню</p>
-						<ul class="footer-menu-list">
+						<?php wp_nav_menu( array(
+							'theme_location'  => 'footer-menu',
+							'container'       => null,
+							'menu_class'      => 'footer-menu-list',
+							'echo'            => true,
+							'items_wrap'      => '<ul class = "%2$s">%3$s</ul>',
+							'depth'           => 1
+						) );
+						?>
+						<!-- <ul class="footer-menu-list">
 							<li><a href="/">Главная страница</a></li>
 							<li><a href="company.html">О VerumTrade</a></li>
 							<li><a href="faq.html">Часто задаваемые вопросы</a></li>
 							<li><a href="contacts.html">Контакты</a></li>
-						</ul>
+						</ul> -->
 					</div>
 					<div class="col-lg-2 col-sm-6 footer-menu-col footer-menu-col-3">
 						<p class="footer-menu-title">Инфоцентр</p>
-						<ul class="footer-menu-list">
+						<?php wp_nav_menu( array(
+							'theme_location'  => 'infocentr-footer',
+							'container'       => null,
+							'menu_class'      => 'footer-menu-list',
+							'echo'            => true,
+							'items_wrap'      => '<ul class = "%2$s">%3$s</ul>',
+							'depth'           => 1
+						) );
+						?>
+						<!-- <ul class="footer-menu-list">
 							<li><a href="event.html">События</a></li>
 							<li><a href="javascript:void(0);">Новости</a></li>
 							<li><a href="javascript:void(0);">Отзывы</a></li>
 							<li><a href="gallery.html">Галерея</a></li>
-						</ul>
+						</ul> -->
 					</div>
 					<div class="col-lg-3 col-sm-6 footer-menu-col footer-menu-col-4">
 						<p class="footer-menu-title">Контакты</p>
